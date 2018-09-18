@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: comments
+#
+#  id                :bigint(8)        not null, primary key
+#  parent_comment_id :integer
+#  post_id           :integer
+#  user_id           :integer
+#  points            :integer
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#  content           :string           not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_comment_id: 1
+  post_id: 1
+  user_id: 1
+  points: 1
+
+two:
+  parent_comment_id: 1
+  post_id: 1
+  user_id: 1
+  points: 1

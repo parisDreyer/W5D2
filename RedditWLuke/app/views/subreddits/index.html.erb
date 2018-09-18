@@ -1,0 +1,15 @@
+<!-- 'subreddits index' -->
+<h2> Index of subreddits </h2>
+
+<ul>
+<% @subreddits.each do |subreddit| %>
+  <li>
+    <ul>
+      <li>
+      <li> <%= link_to "#{subreddit.title}", subreddit_path(subreddit) %></li>
+      <li><%= link_to "#{subreddit.user.username}", user_path(subreddit.user) %></li>
+      <li><%= subreddit.description %> </li>
+    </ul>
+  </li>
+<% end %>
+</ul>
